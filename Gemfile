@@ -32,6 +32,10 @@ gem "actionview", ">= 4.2.7.1"
 
 gem "activerecord", ">= 4.2.7.1"
 
+gem 'simple_form', '~> 3.1.0'
+
+gem 'bootstrap-sass', '~> 3.3.5'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

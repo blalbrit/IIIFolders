@@ -1,1 +1,6 @@
 %h1 IIIFolders
+
+-@posts.each do |post|
+  .row  
+    =link_to (image_tag post.iiifimageurl, height: '250'), post_path(post)
+    %p= post.caption
