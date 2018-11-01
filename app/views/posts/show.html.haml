@@ -1,0 +1,11 @@
+.posts-wrapper.row
+  .post
+    .post-head
+      .name
+        Benjamin Albritton
+    .image.center-block
+      =image_tag @post.iiifimageurl, width: '625'
+    %p.caption
+      =@post.caption
+    .text-center
+      =link_to "Cancel", posts_path
