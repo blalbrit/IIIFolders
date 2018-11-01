@@ -1,6 +1,10 @@
-%h1 IIIFolders
-
--@posts.each do |post|
-  .row  
-    =link_to (image_tag post.iiifimageurl, height: '250'), post_path(post)
-    %p= post.caption
+.posts-wrapper.row
+  -@posts.each do |post|
+    .post
+      .post-head
+        .name
+          Benjamin Albritton
+      .image.center-block
+        =link_to (image_tag post.iiifimageurl, height: '150', class:'img-responsive'), post_path(post)
+      %p.caption
+        =post.caption
